@@ -11,6 +11,9 @@ $length = strlen($text);
 
 //Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
 
+$testoCensurato = str_replace($parolaCensurata, '***', $text);
+$lengthCensura = strlen($testoCensurato);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +25,10 @@ $length = strlen($text);
     <title>Document</title>
 </head>
 <body>
-    <p>Testo: <?php echo $text; ?></p>
+    <p>Testo: <br> <?php echo $text; ?></p>
     <p>Lunghezza: <?php echo $length; ?></p>
+
+    <p>Testo: <br> <?php echo $testoCensurato; ?></p>
+    <p>Lunghezza: <?php echo $lengthCensura; ?></p>
 </body>
 </html>
