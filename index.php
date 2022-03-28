@@ -7,6 +7,8 @@ $length = strlen($text);
 
 //Una parola da censurare viene passata dall’utente tramite parametro GET.
 
+ $parolaCensurata = $_GET["censura"];
+
 //Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
 
 ?>
